@@ -5,6 +5,10 @@ header {
   left: 0;
   z-index: 100;
   width: 100%;
+  transition: background 0.3s ease-in-out;
+  &.scrolling {
+    background-color: rgba($black, 0.9);
+  }
   .header {
     &--main {
       display: flex;
