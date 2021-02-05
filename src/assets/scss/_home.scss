@@ -1,0 +1,142 @@
+.hero {
+    &--container {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 40px;
+    }
+    &--bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center 12%;
+        // background-attachment: fixed;
+        filter: blur(30px);
+    }
+}
+
+.content {
+    $this: &;
+    &--data {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $separators;
+        .poster {
+            width: 25%;
+            margin-right: 20px;
+            img {
+                border-radius: 10px;
+            }
+        }
+        #{$this}--info {
+            width: calc(75% - 20px);
+            color: white;
+            #{$this}--genres {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                span {
+                    display: block;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    padding: 10px 20px;
+                    color: $white;
+                    background-color: rgba($white, 0.2);
+                    border-radius: 8px;
+                }
+            }
+            #{$this}--description {
+                line-height: 1.8;
+            }
+        }
+    }
+    &--actions {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        .buttons {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &--about {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        .about {
+            &--video {
+                width: 30%;
+                margin-right: 20px;
+                img {
+                    border-radius: 15px;
+                }
+            }
+            &--data {
+                width: calc(70% - 20px);
+                table {
+                    border: 0;
+                    color: $white;
+                    td {
+                        line-height: 1.6;
+                        &:nth-child(1) {
+                            color: grey;
+                            min-width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rating {
+    font-size: size(30);
+    color: $yellow;
+    display: flex;
+    align-items: center;
+    .stars {
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+        img {
+            height: 15px;
+        }
+    }
+    .imdb {
+        padding: 10px 10px 10px 15px;
+        border-radius: 8px;
+        background-color: $yellow;
+        display: flex;
+        align-items: center;
+        color: $black;
+        span {
+            font-size: 14px;
+            display: block;
+            margin-right: 10px;
+            font-weight: 500;
+        }
+        img {
+            height: 20px;
+        }
+    }
+}
+
+.your--rating {
+    .stars {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        img {
+            height: 15px;
+        }
+    }
+}

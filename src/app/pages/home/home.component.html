@@ -1,0 +1,109 @@
+<section class="hero--container">
+    <div class="hero--bg" [ngStyle]="{'background-image': 'url(' + data.background + ')'}"></div>
+    <div class="container--responsive">
+        <div class="content--data">
+            <div class="poster">
+                <img [src]="data.poster" />
+            </div>
+            <div class="content--info">
+                <h1 class="margin--b20">{{ data.title | titlecase }}</h1>
+                <p class="margin--b15">{{ data.category }}</p>
+                <div class="rating margin--b15">
+                    <span>{{ data.rating }}</span>
+                    <div class="stars">
+                        <img src="/assets/svg/star.svg" />
+                        <img src="/assets/svg/star.svg" />
+                        <img src="/assets/svg/star.svg" />
+                        <img src="/assets/svg/star.svg" />
+                        <img src="/assets/svg/star-half.svg" />
+                    </div>
+                    <div class="imdb">
+                        <span>9.5/10</span>
+                        <img src="/assets/svg/imdb.svg" />
+                    </div>
+                </div>
+                <div class="margin--b20">
+                    {{ data.length }} - {{ data.made_in }}
+                </div>
+                <div class="content--genres">
+                    <span *ngFor="let genre of data.genres">
+                        {{ genre }}
+                    </span>
+                </div>
+                <p class="content--description">{{ data.description }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container--responsive">
+    <div class="content--actions">
+        <div class="buttons">
+            <button class="btn yellow icon">
+                Play <i class="fi--play"></i>
+            </button>
+            <span class="separator vertical"></span>
+            <button class="btn grey icon margin--r10">
+                Add to Wishlist <i class="fi--bookmark"></i>
+            </button>
+            <button class="btn grey icon">
+                Download <i class="fi--download"></i>
+            </button>
+        </div>
+        <div class="btn grey your--rating">
+            Your rating
+            <div class="stars">
+                <img src="/assets/svg/star.svg" />
+                <img src="/assets/svg/star.svg" />
+                <img src="/assets/svg/star.svg" />
+                <img src="/assets/svg/star.svg" />
+                <img src="/assets/svg/star-half.svg" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container--responsive">
+    <h2 class="section--title margin--b35">About</h2>
+    <div class="content--about">
+        <div class="about--video">
+            <img [src]="about.poster" />
+        </div>
+        <div class="about--data">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Summary:
+                        </td>
+                        <td>
+                            {{ about.summary }}
+                        </td>
+                    </tr>
+                    <tr><td height="15" colspan="2"></td></tr>
+                    <tr>
+                        <td>
+                            Creator:
+                        </td>
+                        <td>
+                            {{ about.creator }}
+                        </td>
+                    </tr>
+                    <tr><td height="15" colspan="2"></td></tr>
+                    <tr>
+                        <td>
+                            Cast:
+                        </td>
+                        <td>
+                            {{ cast }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<app-slider title="Episodes" [sliderData]="data.episodes" [episodes]="true"></app-slider>
+
+<app-slider title="More Like This" [sliderData]="data.episodes"></app-slider>

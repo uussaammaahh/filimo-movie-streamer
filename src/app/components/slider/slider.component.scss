@@ -1,0 +1,25 @@
+:host {
+    display: block;
+    margin-bottom: 100px;
+}
+
+.slide--container {
+    display: flex;
+    align-items: center;
+}
+.content-slide {
+    img {
+        border-radius: 10px;
+    }
+}
+.seasons--counter {
+    width: 17%;
+    margin-right: 15px;
+}
+
+.slider--container {
+    width: 100%;
+    &.episodes {
+        width: calc((100% - 17%) - 15px);
+    }
+}

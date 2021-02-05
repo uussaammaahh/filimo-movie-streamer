@@ -1,0 +1,147 @@
+{
+  "content_detail": [{
+    "id": 1,
+    "poster": "/assets/images/poster.jpg",
+    "background": "/assets/images/wallpaper.jpg",
+    "title": "Breaking Bad: S3 E6",
+    "category": "Series",
+    "rating": 9.4,
+    "imdb_rating": "9.5/10",
+    "length": "43 Minutes",
+    "made_in": "USA",
+    "genres": ["Action", "Crime", "Drama", "Fantasy", "Thriller"],
+    "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+    "about": {
+        "poster": "/assets/images/about.jpg",
+      "summary": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+      "creator": "Vince Gilligan",
+      "cast": ["Bryan Cranston", "Anna Gunn", "Aaron Paul", "Dean Norris", "Betsy Brandt", "RJ Mitte Bob Odenkirk", "Giancarlo Esposito", "Jonathan Banks", "Laura Fraser", "Jesse Plemons"]
+    },
+    "episodes": [{
+        "id": 1,
+        "thumb": "/assets/images/episodes-thumb.jpg"
+      },
+      {
+        "id": 2,
+        "thumb": "/assets/images/episodes-thumb.jpg"
+      },
+      {
+        "id": 3,
+        "thumb": "/assets/images/episodes-thumb.jpg"
+      },
+      {
+        "id": 4,
+        "thumb": "/assets/images/episodes-thumb.jpg"
+      },
+      {
+        "id": 5,
+        "thumb": "/assets/images/episodes-thumb.jpg"
+      },
+      {
+        "id": 6,
+        "thumb": "/assets/images/episodes-thumb.jpg"
+      },
+      {
+        "id": 7,
+        "thumb": "/assets/images/episodes-thumb.jpg"
+      }
+    ],
+    "related_content": [{
+        "id": 1,
+        "title": "El Camino",
+        "category": "TV-MA",
+        "genre": ["Action", "Crime"]
+      },
+      {
+        "id": 2,
+        "title": "Better Call Saul",
+        "category": "TV-MA",
+        "genre": ["Crime", "Drama"]
+      },
+      {
+        "id": 3,
+        "title": "The Parts You Lose",
+        "category": "Movie",
+        "genre": ["Drama", "Thriller"]
+      },
+      {
+        "id": 4,
+        "title": "Need For Speed",
+        "category": "Movie",
+        "genre": ["Action", "Crime"]
+      },
+      {
+        "id": 5,
+        "title": "Last Christmas",
+        "category": "Movie",
+        "genre": ["Comedy", "Drama"]
+      },
+      {
+        "id": 6,
+        "title": "Avengers - The End Game",
+        "category": "Movie",
+        "genre": ["Action", "Superhero"]
+      }
+    ],
+    "comments": [{
+        "id": 1,
+        "user": "danulis",
+        "comment": "The most perfect show ever created. There will no other show like this.",
+        "rating": "10/10",
+        "date": "19 Jan 2019"
+      },
+      {
+        "id": 2,
+        "user": "xpinerhd",
+        "comment": "I wanna delete my brain and watch it again like I never knew it.",
+        "rating": "10/10",
+        "date": "17 Mar 2019"
+      },
+      {
+        "id": 3,
+        "user": "otnememento",
+        "comment": "The best series I have seen in my whole life, even better than the wire.",
+        "rating": "10/10",
+        "date": "21 Aug 2019"
+      },
+      {
+        "id": 4,
+        "user": "manishsingh",
+        "comment": "When you finish the show you'll never be the same..I guarantee you",
+        "rating": "10/10",
+        "date": "02 Oct 2019"
+      },
+      {
+        "id": 5,
+        "user": "bruhperson",
+        "comment": "Re-Watched it 7 times and counting. I guess I liked it.",
+        "rating": "10/10",
+        "date": "12 Oct 2019"
+      }
+    ]
+  }],
+  "menu": [{
+      "name": "Home",
+      "url": "#"
+    },
+    {
+      "name": "Movies & Series",
+      "url": "#"
+    },
+    {
+      "name": "Live",
+      "url": "#"
+    },
+    {
+      "name": "Popular",
+      "url": "#"
+    },
+    {
+      "name": "My List",
+      "url": "#"
+    }
+  ],
+  "user": {
+      "profile_pic": "/assets/images/profile-pic.jpg"
+  }
+}
