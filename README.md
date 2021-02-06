@@ -1,5 +1,5 @@
 # FilimoMovieStreamer
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0. To serve as a practical test.
 
 ## Step 1
 Clone the project on your local machine
