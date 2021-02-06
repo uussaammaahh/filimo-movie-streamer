@@ -1,6 +1,7 @@
 <header #headerRef>
     <div class="header--main">
         <img src="/assets/images/logo.png" alt="Filimo" class="logo">
+        <input type="checkbox" id="mob-menu" hidden>
         <nav>
             <ul>
                 <li *ngFor="let item of menu">
@@ -13,6 +14,11 @@
             <div class="user" *ngIf="user">
                 <img [src]="user.profile_pic" />
             </div>
+            <label for="mob-menu" class="hamburger_container hamburger">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </label>
         </div>
     </div>
 </header>
