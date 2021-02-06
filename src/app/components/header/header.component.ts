@@ -45,4 +45,9 @@ export class HeaderComponent implements OnInit {
     ).subscribe();
   }
 
+  ngOnDestroy(): void {
+    this.destroyed$.next();
+    this.destroyed$.complete();
+  }
+
 }
