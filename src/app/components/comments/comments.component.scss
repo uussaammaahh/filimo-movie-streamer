@@ -6,9 +6,17 @@
     $this: &;
     &--container {
         display: flex;
+        @media only screen and (max-width: 640px) {
+            flex-direction: column;
+        }
         #{$this}--write {
             margin-right: 10px;
             width: 35%;
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
             .form {
                 position: sticky;
                 top: 90px;
@@ -34,6 +42,9 @@
             display: flex;
             flex-direction: column;
             width: calc(65% - 10px);
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+            }
             .comment {
                 padding: 15px 20px;
                 border-radius: 10px;
@@ -53,7 +64,7 @@
                     align-self: flex-start;
                 }
                 .user-data {
-                    padding: 10px 0;
+                    padding: 10px 20px 10px 0;
                     margin-right: auto;
                     .username {
                         color: #b8b8b8;

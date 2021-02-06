@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   user: any = {};
 
   @HostListener('window:scroll', ['$event']) onScroll(event: Event) {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 10) {
       this.renderer.addClass(this.headerRef.nativeElement, 'scrolling');
     } else {
       this.renderer.removeClass(this.headerRef.nativeElement, 'scrolling');

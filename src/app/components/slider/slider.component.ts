@@ -13,12 +13,17 @@ export class SliderComponent implements OnInit {
 
   randomClass: any = 'btn-'+btoa(Math.random().toString()).replace(/[^a-zA-Z]/g, '');
   config: SwiperOptions = {
-    slidesPerView: 5,
+    slidesPerView: 2,
     spaceBetween: 15,
     navigation: {
       nextEl: '.button-next.' + this.randomClass,
       prevEl: '.button-prev.' + this.randomClass,
-    }
+    },
+    breakpoints: {
+      640: {
+          slidesPerView: 5,
+      }
+     }
   };
 
   constructor() { }

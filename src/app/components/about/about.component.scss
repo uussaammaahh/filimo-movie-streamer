@@ -1,17 +1,30 @@
 .content--about {
     display: flex;
-    align-items: center;
     margin-bottom: 100px;
+    @media only screen and (min-width: 769px) {
+        align-items: center;
+    }
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+    }
     .about {
         &--video {
             width: 30%;
             margin-right: 20px;
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
             img {
                 border-radius: 15px;
             }
         }
         &--data {
             width: calc(70% - 20px);
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+            }
             table {
                 border: 0;
                 color: #fff;

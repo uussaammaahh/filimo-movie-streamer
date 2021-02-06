@@ -1,11 +1,16 @@
 .hero {
     &--container {
         position: relative;
-        min-height: 100vh;
         display: flex;
-        align-items: flex-end;
         padding-bottom: 40px;
         padding-top: 80px;
+        @media only screen and (min-width: 769px) {
+            min-height: 100vh;
+            align-items: flex-end;
+        }
+        @media only screen and (max-width: 768px) {
+            padding-top: 100px;
+        }
     }
     &--bg {
         position: absolute;
@@ -25,13 +30,23 @@
     &--data {
         height: 100%;
         display: flex;
-        align-items: flex-end;
         position: relative;
         padding-bottom: 40px;
         border-bottom: 1px solid $separators;
+        @media only screen and (min-width: 769px) {
+            align-items: flex-end;
+        }
+        @media only screen and (max-width: 640px) {
+            flex-direction: column-reverse;
+        }
         .poster {
             width: 25%;
             margin-right: 20px;
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+                margin-right: 0;
+                margin-top: 15px;
+            }
             img {
                 border-radius: 10px;
             }
@@ -39,6 +54,9 @@
         #{$this}--info {
             width: calc(75% - 20px);
             color: white;
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+            }
             #{$this}--genres {
                 display: flex;
                 align-items: center;
@@ -64,9 +82,19 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 70px;
+        @media only screen and (max-width: 640px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
         .buttons {
             display: flex;
             align-items: center;
+            @media only screen and (max-width: 640px) {
+                flex-wrap: wrap;
+                button {
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 }

@@ -5,10 +5,16 @@ footer {
         &--top {
             padding: 70px 0;
             display: flex;
+            @media only screen and (max-width: 640px) {
+                flex-direction: column-reverse;
+            }
         }
         &--links {
             display: flex;
             width: calc((100% / 4) * 3);
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+            }
             .links--block {
                 width: calc(100% / 3);
                 padding-right: 20px;
@@ -28,6 +34,10 @@ footer {
         }
         &--about {
             width: calc(100% / 4);
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+                margin-bottom: 15px;
+            }
             .logo {
                 height: 50px;
                 margin-bottom: 15px;
