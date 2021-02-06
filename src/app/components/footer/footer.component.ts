@@ -19,8 +19,6 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
     this.app.getFooter().pipe(
       tap((res: any) => {
-        console.log(res);
-
         this.footer = res;
       }),
       takeUntil(this.destroyed$)

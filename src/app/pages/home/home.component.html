@@ -1,5 +1,5 @@
 <section class="hero--container">
-    <div class="hero--bg" [ngStyle]="{'background-image': 'url(' + data.background + ')'}"></div>
+    <div class="hero--bg" *ngIf="data.background" [ngStyle]="{'background-image': 'url(' + data.background + ')'}"></div>
     <div class="container--responsive">
         <div class="content--data">
             <div class="poster">
