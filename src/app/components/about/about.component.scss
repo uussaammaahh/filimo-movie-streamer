@@ -1,0 +1,28 @@
+.content--about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    .about {
+        &--video {
+            width: 30%;
+            margin-right: 20px;
+            img {
+                border-radius: 15px;
+            }
+        }
+        &--data {
+            width: calc(70% - 20px);
+            table {
+                border: 0;
+                color: #fff;
+                td {
+                    line-height: 1.6;
+                    &:nth-child(1) {
+                        color: grey;
+                        min-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}

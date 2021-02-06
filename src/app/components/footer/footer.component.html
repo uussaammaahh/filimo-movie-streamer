@@ -1,1 +1,37 @@
-<p>footer works!</p>
+<footer>
+    <button class="btn yellow round scroll-to-top" (click)="scrollToTop()">
+        <i class="fi--up-arrow"></i>
+    </button>
+    <div class="container--responsive" *ngIf="footer">
+        <div class="footer--top">
+            <div class="footer--links">
+                <div class="links--block" *ngFor="let block of footer.links">
+                    <ul>
+                        <li *ngFor="let link of block">
+                            <a [routerLink]="[link.url]">{{ link.name }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer--about">
+                <img src="/assets/images/logo.png" class="logo" />
+                <p class="margin--b20">{{ footer.description }}</p>
+                <div class="social--links">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fi--instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fi--facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer--bottom" [innerHtml]="footer.copyright"></div>
+    </div>
+</footer>

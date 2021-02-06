@@ -1,0 +1,31 @@
+<section class="container--responsive">
+    <h2 class="section--title margin--b35">Comments</h2>
+    <div class="comments--container">
+        <div class="comments--write">
+            <div class="form">
+                <div class="comment--box">
+                    <textarea placeholder="Write your review here..."></textarea>
+                </div>
+                <button class="btn yellow">Submit</button>
+            </div>
+        </div>
+        <div class="comments--list">
+            <div class="comment margin--b10" *ngFor="let comment of commentsData">
+                <img [src]="comment.user_pic" />
+                <div class="user-data">
+                    <span class="username">{{ comment.user }}</span>
+                    <p class="desc">{{ comment.comment }}</p>
+                </div>
+                <div class="user-rating">
+                    <span class="rating small">{{ comment.rating }}</span>
+                    <span class="date">{{ comment.date }}</span>
+                </div>
+            </div>
+
+            <div class="load-more">
+                More
+                <i class="fi--double-down"></i>
+            </div>
+        </div>
+    </div>
+</section>

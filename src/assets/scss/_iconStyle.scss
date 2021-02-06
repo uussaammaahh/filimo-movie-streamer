@@ -27,6 +27,16 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fi--facebook {
+  &:before {
+    content: $fi--facebook; 
+  }
+}
+.fi--instagram {
+  &:before {
+    content: $fi--instagram; 
+  }
+}
 .fi--bookmark {
   &:before {
     content: $fi--bookmark; 
@@ -67,4 +77,3 @@ i {
     content: $fi--up-arrow; 
   }
 }
-

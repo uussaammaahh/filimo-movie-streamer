@@ -20,6 +20,12 @@ export class AppService {
     )
   }
 
+  getFooter() {
+    return from(this.http.get(`${environment.endpoint}/footer`)).pipe(
+      switchMap((data) => data ? this.http.get(`${environment.endpoint}/footer`) : EMPTY)
+    )
+  }
+
   getUser() {
     return from(this.http.get(`${environment.endpoint}/user`)).pipe(
       switchMap((data) => data ? this.http.get(`${environment.endpoint}/user`) : EMPTY)

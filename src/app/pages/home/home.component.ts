@@ -13,8 +13,7 @@ export class HomeComponent implements OnInit {
 
   destroyed$: Subject<any> = new Subject();
   data: any = {};
-  about: any = {};
-  cast: string = '';
+  comments: any;
 
   constructor(
     private show: ShowService,
@@ -27,8 +26,7 @@ export class HomeComponent implements OnInit {
       this.show.getShowData(params['id']).pipe(
         tap((res: any) => {
           this.data = res;
-          this.about = res.about;
-          this.cast = res.about.cast.join(', ');
+          this.comments = res.comments.sort((a: any, b: any) => b.id - a.id);
         }),
         takeUntil(this.destroyed$)
       ).subscribe();

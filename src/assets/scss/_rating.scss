@@ -1,0 +1,45 @@
+.rating {
+    font-size: size(30);
+    color: $yellow;
+    display: flex;
+    align-items: center;
+    &.small {
+        font-size: size(18);
+    }
+    .stars {
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+        img {
+            height: 15px;
+        }
+    }
+    .imdb {
+        padding: 10px 10px 10px 15px;
+        border-radius: 8px;
+        background-color: $yellow;
+        display: flex;
+        align-items: center;
+        color: $black;
+        span {
+            font-size: 14px;
+            display: block;
+            margin-right: 10px;
+            font-weight: 500;
+        }
+        img {
+            height: 20px;
+        }
+    }
+}
+
+.your--rating {
+    .stars {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        img {
+            height: 15px;
+        }
+    }
+}

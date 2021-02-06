@@ -1,0 +1,92 @@
+:host {
+    margin-bottom: 70px;
+    display: block;
+}
+.comments {
+    $this: &;
+    &--container {
+        display: flex;
+        #{$this}--write {
+            margin-right: 10px;
+            width: 35%;
+            .form {
+                position: sticky;
+                top: 90px;
+            }
+            .comment--box {
+                padding: 15px;
+                background-color: #54504d;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                textarea {
+                    outline: 0;
+                    border: 0;
+                    appearance: none;
+                    color: #fff;
+                    background: transparent;
+                    width: 100%;
+                    resize: none;
+                    height: 150px;
+                }
+            }
+        }
+        #{$this}--list {
+            display: flex;
+            flex-direction: column;
+            width: calc(65% - 10px);
+            .comment {
+                padding: 15px 20px;
+                border-radius: 10px;
+                background-color: #54504d;
+                width: 100%;
+                display: flex;
+                color: #fff;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 0 1px #fff;
+                    margin-right: 15px;
+                    align-self: flex-start;
+                }
+                .user-data {
+                    padding: 10px 0;
+                    margin-right: auto;
+                    .username {
+                        color: #b8b8b8;
+                        margin-bottom: 15px;
+                        display: block;
+                    }
+                }
+                .user-rating {
+                    padding: 5px 0 5px 20px;
+                    border-left: 1px solid #fff;
+                    span {
+                        display: block;
+                        text-align: center;
+                    }
+                    .date {
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .load-more {
+                text-align: center;
+                align-self: center;
+                color: #fff;
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                i {
+                    margin-left: 10px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

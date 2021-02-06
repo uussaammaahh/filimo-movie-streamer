@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    @extend %siteBg;
+}
 body {
     font-family: 'Roboto';
     @extend %siteBg;
@@ -14,6 +17,7 @@ body {
 
 a {
     text-decoration: none;
+    outline: 0;
     &.underline {
         text-decoration: underline;
     }
@@ -56,6 +60,9 @@ h6 {
 }
 
 .margin {
+    &--b10 {
+        margin-bottom: 10px;
+    }
     &--b15 {
         margin-bottom: 15px;
     }
@@ -94,6 +101,9 @@ h6 {
     align-items: center;
     &.yellow {
         background-color: $yellow;
+        i {
+            color: $white;
+        }
     }
     &.grey {
         background-color: $grey;
@@ -102,6 +112,15 @@ h6 {
         i {
             margin-left: 10px;
         }
+    }
+    &.round {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

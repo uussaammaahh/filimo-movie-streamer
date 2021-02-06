@@ -1,0 +1,40 @@
+<section class="container--responsive">
+    <h2 class="section--title margin--b35">About</h2>
+    <div class="content--about" *ngIf="aboutData">
+        <div class="about--video">
+            <img [src]="aboutData.poster" />
+        </div>
+        <div class="about--data">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            Summary:
+                        </td>
+                        <td>
+                            {{ aboutData.summary }}
+                        </td>
+                    </tr>
+                    <tr><td height="15" colspan="2"></td></tr>
+                    <tr>
+                        <td>
+                            Creator:
+                        </td>
+                        <td>
+                            {{ aboutData.creator }}
+                        </td>
+                    </tr>
+                    <tr><td height="15" colspan="2"></td></tr>
+                    <tr>
+                        <td>
+                            Cast:
+                        </td>
+                        <td>
+                            {{ aboutData.cast.join(', ') }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

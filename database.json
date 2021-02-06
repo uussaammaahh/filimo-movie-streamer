@@ -94,35 +94,40 @@
         "user": "danulis",
         "comment": "The most perfect show ever created. There will no other show like this.",
         "rating": "10/10",
-        "date": "19 Jan 2019"
+        "date": "19 Jan 2019",
+        "user_pic": "/assets/images/profile-pic.jpg"
       },
       {
         "id": 2,
         "user": "xpinerhd",
         "comment": "I wanna delete my brain and watch it again like I never knew it.",
         "rating": "10/10",
-        "date": "17 Mar 2019"
+        "date": "17 Mar 2019",
+        "user_pic": "/assets/images/profile-pic.jpg"
       },
       {
         "id": 3,
         "user": "otnememento",
         "comment": "The best series I have seen in my whole life, even better than the wire.",
         "rating": "10/10",
-        "date": "21 Aug 2019"
+        "date": "21 Aug 2019",
+        "user_pic": "/assets/images/profile-pic.jpg"
       },
       {
         "id": 4,
         "user": "manishsingh",
         "comment": "When you finish the show you'll never be the same..I guarantee you",
         "rating": "10/10",
-        "date": "02 Oct 2019"
+        "date": "02 Oct 2019",
+        "user_pic": "/assets/images/profile-pic.jpg"
       },
       {
         "id": 5,
         "user": "bruhperson",
         "comment": "Re-Watched it 7 times and counting. I guess I liked it.",
         "rating": "10/10",
-        "date": "12 Oct 2019"
+        "date": "12 Oct 2019",
+        "user_pic": "/assets/images/profile-pic.jpg"
       }
     ]
   }],
@@ -149,5 +154,59 @@
   ],
   "user": {
       "profile_pic": "/assets/images/profile-pic.jpg"
+  },
+  "footer": {
+      "description": "Filimo is the world’s leading community for creators to share, grow, and get hired.",
+      "copyright": "&copy; 2020 Filimo. All rights reserved.",
+      "links": [
+          [{
+              "name": "Home",
+              "url" : "#"
+          },
+          {
+              "name": "Contact us",
+              "url" : "#"
+          },
+          {
+              "name": "Terms of service",
+              "url" : "#"
+          },
+          {
+              "name": "About us",
+              "url" : "#"
+          }],
+          [{
+              "name": "Live",
+              "url" : "#"
+          },
+          {
+              "name": "FAQ",
+              "url" : "#"
+          },
+          {
+              "name": "Premium",
+              "url" : "#"
+          },
+          {
+              "name": "Privacy Policy",
+              "url" : "#"
+          }],
+          [{
+              "name": "Popular",
+              "url" : "#"
+          },
+          {
+              "name": "Recently Released",
+              "url" : "#"
+          },
+          {
+              "name": "250 IMDB",
+              "url" : "#"
+          },
+          {
+              "name": "Advertise with us",
+              "url" : "#"
+          }]
+      ]
   }
 }

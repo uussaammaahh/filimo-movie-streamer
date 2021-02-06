@@ -63,47 +63,10 @@
     </div>
 </section>
 
-<section class="container--responsive">
-    <h2 class="section--title margin--b35">About</h2>
-    <div class="content--about">
-        <div class="about--video">
-            <img [src]="about.poster" />
-        </div>
-        <div class="about--data">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            Summary:
-                        </td>
-                        <td>
-                            {{ about.summary }}
-                        </td>
-                    </tr>
-                    <tr><td height="15" colspan="2"></td></tr>
-                    <tr>
-                        <td>
-                            Creator:
-                        </td>
-                        <td>
-                            {{ about.creator }}
-                        </td>
-                    </tr>
-                    <tr><td height="15" colspan="2"></td></tr>
-                    <tr>
-                        <td>
-                            Cast:
-                        </td>
-                        <td>
-                            {{ cast }}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
+<app-about [aboutData]="data.about"></app-about>
 
 <app-slider title="Episodes" [sliderData]="data.episodes" [episodes]="true"></app-slider>
 
 <app-slider title="More Like This" [sliderData]="data.related_content"></app-slider>
+
+<app-comments [commentsData]="data.comments"></app-comments>

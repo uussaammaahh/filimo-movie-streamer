@@ -25,10 +25,6 @@ export class SliderComponent implements OnInit {
 
   ngOnInit() {
     SwiperCore.use([Navigation]);
-    setTimeout(() => {
-      console.log(this.sliderData);
-      
-    }, 1000);
   }
 
 }
