@@ -8,18 +8,97 @@
     align-items: center;
 }
 .content-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    .img-wrap {
+        height: 23vw;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
     img {
         border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .others {
+        text-align: center;
+        small {
+            color: #a9a9a9;
+        }
     }
 }
 .seasons--counter {
     width: 17%;
     margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    .count {
+        width: 50px;
+        height: 50px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 8vw;
+            max-width: 150px;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            background-color: white;
+        }
+    }
 }
 
-.slider--container {
-    width: 100%;
-    &.episodes {
-        width: calc((100% - 17%) - 15px);
+.slider {
+    $this: &;
+    &--toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #{$this}--buttons {
+            display: flex;
+            align-items: center;
+            button {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid white;
+                background-color: rgba(#fff, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                outline: 0;
+                i {
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &--container {
+        width: 100%;
+        &.episodes {
+            width: calc((100% - 17%) - 15px);
+        }
     }
 }

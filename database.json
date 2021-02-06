@@ -50,37 +50,43 @@
         "id": 1,
         "title": "El Camino",
         "category": "TV-MA",
-        "genre": ["Action", "Crime"]
+        "genre": ["Action", "Crime"],
+        "thumb": "/assets/images/El Camino.jpg"
       },
       {
         "id": 2,
         "title": "Better Call Saul",
         "category": "TV-MA",
-        "genre": ["Crime", "Drama"]
+        "genre": ["Crime", "Drama"],
+        "thumb": "/assets/images/Better Call Saul.jpg"
       },
       {
         "id": 3,
         "title": "The Parts You Lose",
         "category": "Movie",
-        "genre": ["Drama", "Thriller"]
+        "genre": ["Drama", "Thriller"],
+        "thumb": "/assets/images/The Parts You Lose.jpg"
       },
       {
         "id": 4,
         "title": "Need For Speed",
         "category": "Movie",
-        "genre": ["Action", "Crime"]
+        "genre": ["Action", "Crime"],
+        "thumb": "/assets/images/Need For Speed.jpg"
       },
       {
         "id": 5,
         "title": "Last Christmas",
         "category": "Movie",
-        "genre": ["Comedy", "Drama"]
+        "genre": ["Comedy", "Drama"],
+        "thumb": "/assets/images/Last Christmas.jpg"
       },
       {
         "id": 6,
-        "title": "Avengers - The End Game",
+        "title": "Avengers - Endgame",
         "category": "Movie",
-        "genre": ["Action", "Superhero"]
+        "genre": ["Action", "Superhero"],
+        "thumb": "/assets/images/Avengers - Endgame.jpg"
       }
     ],
     "comments": [{
